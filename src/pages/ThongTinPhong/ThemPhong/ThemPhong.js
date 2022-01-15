@@ -1,12 +1,10 @@
 import { useFormik } from "formik";
-import React, { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import {
   addRoomsAction,
-  getDetailRoomsAction,
 } from "../../../redux/actions/DanhSachPhongActions";
-import { history } from "../../../App";
 export default function ThemPhong(props) {
   const [imgSrc, setImgSrc] = useState("");
   const dispatch = useDispatch();

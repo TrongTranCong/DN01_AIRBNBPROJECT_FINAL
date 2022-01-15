@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
-import Header from "../../templates/HomeTemplate/Layout/Header/Header";
 import { isAuthenticated } from "../../auth/index";
 import moment from "moment";
-import Footer from "../../templates/HomeTemplate/Layout/Footer/Footer";
 import { NavLink } from "react-router-dom";
 import DefaultAvatar from "../../assets/avatar.jpg";
 import { useDispatch, useSelector } from "react-redux";
@@ -26,10 +24,10 @@ export default function ThongTinCaNhan() {
   const {
     name,
     email,
-    password,
+    // password,
     phone,
     birthday,
-    gender,
+    // gender,
     address,
     type,
     avatar,
@@ -45,6 +43,7 @@ export default function ThongTinCaNhan() {
     const value =
       name === "avatar" ? event.target.files[0] : event.target.value;
     formData.set(name, value);
+    setValues(...values)
   };
 
   const clickSubmit = (event) => {
@@ -103,7 +102,9 @@ export default function ThongTinCaNhan() {
     const action = thongTinChiTiet(_id);
     dispatch(action);
     // console.log(infoUser);
-  }, [dispatch]);
+  },
+  // eslint-disable-next-line
+  [dispatch]);
 
   // const loadProfile = (userId) => {
   //   read(userId).then((data) => {

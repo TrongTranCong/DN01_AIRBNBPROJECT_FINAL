@@ -61,7 +61,7 @@ export default function Register() {
           },
           data: values,
         });
-        // console.log(response.data);
+        console.log(response.data);
         dispatch(DangKyAction(values));
 
         // resetForm({

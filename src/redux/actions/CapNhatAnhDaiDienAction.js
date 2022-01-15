@@ -1,5 +1,3 @@
-import axios from "axios";
-
 import { DOMAIN } from "../../util/setting";
 
 export const capNhatAnhDaiDien = (value) => {

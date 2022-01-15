@@ -193,9 +193,8 @@ export default function Content(props) {
         <div className="col-lg-3">
           <div>
             <img
-              className="img-fluid"
               src="https://www.chicagotribune.com/resizer/2setzbtxaZRfhrxGTkZnxzqpDoI=/630x630/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/TGLDNXZJBVBWDPOOLTEYOJWF4Y.jpg"
-              className="card-img-top"
+              className="card-img-top img-fluid"
               alt="..."
             />
             <h5 className="card-title text-left">

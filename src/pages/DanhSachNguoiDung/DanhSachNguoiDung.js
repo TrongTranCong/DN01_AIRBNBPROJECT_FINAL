@@ -12,7 +12,6 @@ import "../../pages/Register/Register.css";
 import { capNhatNguoiDung } from "../../redux/actions/CapNhatNguoiDungAction";
 // import { isAuthenticated } from "../../auth/index";
 import { XoaNguoiDung } from "../../redux/actions/XoaNguoiDungAction";
-import { Header } from "antd/lib/layout/layout";
 import { themNguoiDung } from "../../redux/actions/ThemNguoiDungAction";
 
 export default function DanhSachNguoiDung() {
@@ -60,7 +59,7 @@ export default function DanhSachNguoiDung() {
         "ẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợ" +
         "ụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹý\\s]+$`);
 
-    let patternEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let patternEmail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
     let patternPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
     let patternPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$/;
     if (
@@ -181,7 +180,9 @@ export default function DanhSachNguoiDung() {
       error: "",
     });
     // }
-  }, [index]);
+  },
+  // eslint-disable-next-line
+  [index]);
 
   const renderListUser = () => {
     return listUser.map((user, index) => {

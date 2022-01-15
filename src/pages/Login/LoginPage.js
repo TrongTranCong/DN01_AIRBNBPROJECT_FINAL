@@ -46,7 +46,7 @@ export default function LoginPage(props) {
           },
           data: values,
         });
-        // console.log(response.data);
+        console.log(response.data);
         dispatch(DangNhapAction({ values, callback: handleLoginSucces }));
       } catch (error) {
         setErrMsg(error.response.data.message);
@@ -157,7 +157,7 @@ export default function LoginPage(props) {
                 </button>
 
                 <div className="forget-id">
-                  <a href="">Quên mật khẩu?</a>
+                  <a href="/">Quên mật khẩu?</a>
                 </div>
                 <div className="option">Hoặc</div>
               </form>
