@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ff5b9e61.chunk.css",
+    "main.js": "/static/js/main.b493ba36.chunk.js",
+    "main.js.map": "/static/js/main.b493ba36.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.dedfddbf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.dedfddbf.js.map",
+    "static/css/2.a95be28f.chunk.css": "/static/css/2.a95be28f.chunk.css",
+    "static/js/2.6a8bab0e.chunk.js": "/static/js/2.6a8bab0e.chunk.js",
+    "static/js/2.6a8bab0e.chunk.js.map": "/static/js/2.6a8bab0e.chunk.js.map",
+    "static/js/3.a014c164.chunk.js": "/static/js/3.a014c164.chunk.js",
+    "static/js/3.a014c164.chunk.js.map": "/static/js/3.a014c164.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.a95be28f.chunk.css.map": "/static/css/2.a95be28f.chunk.css.map",
+    "static/css/main.ff5b9e61.chunk.css.map": "/static/css/main.ff5b9e61.chunk.css.map",
+    "static/js/2.6a8bab0e.chunk.js.LICENSE.txt": "/static/js/2.6a8bab0e.chunk.js.LICENSE.txt",
+    "static/media/avatar.35aba674.jpg": "/static/media/avatar.35aba674.jpg",
+    "static/media/LoginPage.css": "/static/media/login-image.850d29db.jpg",
+    "static/media/Register.css": "/static/media/signup-image.b1123729.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dedfddbf.js",
+    "static/css/2.a95be28f.chunk.css",
+    "static/js/2.6a8bab0e.chunk.js",
+    "static/css/main.ff5b9e61.chunk.css",
+    "static/js/main.b493ba36.chunk.js"
+  ]
+}

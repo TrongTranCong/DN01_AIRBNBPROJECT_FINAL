@@ -1,0 +1,9 @@
+.hinhAnhRoom {
+  width: 25%;
+}
+
+@media screen and (max-width: 992px) {
+  .hinhAnhRoom {
+    width: 100%;
+  }
+}

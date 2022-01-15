@@ -1,0 +1,18 @@
+@media screen and (max-width: 992px) {
+  .img-detail-center {
+    margin: 15px 0;
+  }
+  .img-detail {
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .ant-card-head-wrapper {
+    flex-direction: column;
+  }
+  .ant-card-extra {
+    margin-right: auto;
+    padding: 8px;
+  }
+}

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: #f5f9fe;
+  font-size: 16px;
+  /* Hai add background  */
+  background-image: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  opacity: 0.95;
+  /* font-family: "Vibur", cursive; */
+  /* font-family: "Abel", sans-serif; */
+
+}
+
+.footer {
+  padding: 0 80px;
+  background: #f3f1f1;
+}
+
+.footer2 {
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.content_bnb {
+  padding: 0 80px;
+}
+
+
+.form-control {
+  background-color: transparent;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.foodTable img{
+  width: 50px;
+  height: 30px;
+  max-width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+  object-fit: cover;
+}
+
+

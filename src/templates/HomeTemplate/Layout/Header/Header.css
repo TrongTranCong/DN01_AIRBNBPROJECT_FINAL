@@ -1,0 +1,147 @@
+header {
+  padding: 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #FFF;
+}
+
+/* .is-sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  z-index: 999;
+  box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+  background-color: #fff;
+  color: #000;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+} */
+
+header .nav-item .nav-link::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  display: block;
+  left: 0;
+  background-color: #fff;
+  /* transform: scaleX(0); */
+  transition: all 0.5s;
+}
+
+header .nav-item:hover .nav-link::after {
+  /* transform: scaleX(0.1); */
+  width: 100%;
+}
+
+header .nav-item.active .nav-link::after {
+  transform: scaleX(0.5);
+}
+header .login {
+  background: #fff;
+  border-radius: 1.25rem;
+  height: 10px;
+  padding: 15px;
+  color: #222222;
+}
+
+.dropdown-item:hover{
+  background: #3d78b3;
+}
+
+.search-blog {
+  border: 1px solid rgb(221, 221, 221);
+  height: 65px;
+  width: 900px;
+  /* margin-left: 220px; */
+  border-radius: 2.5rem;
+  background-color: #fff;
+}
+
+form {
+  position: relative;
+}
+
+form input {
+  width: 100%;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+form input:placeholder-shown + button {
+  opacity: 0;
+  pointer-events: none;
+}
+
+form .clearInput {
+  position: absolute;
+  border: none;
+  display: block;
+  /* width: 15px;
+  height: 15px; */
+  line-height: 16px;
+  font-size: 20px;
+  border-radius: 50%;
+  top: 25px;
+  bottom: 0;
+  right: 15px;
+  margin: auto;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.searchForm {
+  border: 1px solid rgb(221, 221, 221);
+  height: auto;
+  width: 700px;
+  background-color: #fff;
+  margin-left: 205px;
+  border-radius: 15px;
+ 
+}
+
+.suggestion {
+  cursor: pointer;
+  padding: 15px 20px;
+}
+.suggestion-highlighted:hover {
+  background-color: #ddd;
+  padding: 15px 0;
+}
+@media screen and (max-width: 1200px) {
+  .searchForm {
+    margin-left: 115px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .navbar-nav {
+    align-items: center;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .searchForm {
+    margin-left: -5px;
+     background-image: linear-gradient(
+    -225deg
+    , #E3FDF5 50%, #FFE6FA 50%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .searchForm {
+    margin-left: -95px;
+  }
+}
+@media screen and (max-width: 411px) {
+  .searchForm {
+    margin-left: -160px;
+  }
+}

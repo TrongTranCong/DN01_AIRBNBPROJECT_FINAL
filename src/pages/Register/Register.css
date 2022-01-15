@@ -1,0 +1,351 @@
+.register {
+  /* background: rgb(204, 226, 226) !important; */
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e0eafc,
+    #cfdef3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  height: 100vh;
+}
+/* .content {
+  height: 100vh;
+} */
+
+/* .vh-register {
+  height: 100vh;
+} */
+.register img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.register-logo {
+  padding: 25px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(255, 56, 92);
+}
+.form-register {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 5px ;
+  background-image: linear-gradient(
+    -225deg
+    , #E3FDF5 50%, #FFE6FA 50%);
+}
+
+.register .content {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 12px 12px 22px;
+}
+
+/* .register-col1,
+.register-col2,
+.register-col3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  justify-content: space-between;
+} */
+
+.form-register .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 12px 0 12px 0;
+}
+
+form .user-details .input-box {
+  width: calc(100% / 2 - 20px);
+}
+
+.title-register {
+  margin: 5px 0 12px 0;
+  font-weight: 700;
+  /* position: relative; */
+}
+
+.form-register .input-register {
+  height: 50px;
+  width: 100%;
+  border: none;
+  outline: none;
+
+  border-radius: 60px;
+  padding-left: 20px;
+  box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 30px -11px rgba(0, 0, 0, 0.75);
+  font-size: 17px;
+}
+
+.form-register .input-register:focus {
+  border: 2px solid rgb(29, 155, 240);
+}
+
+.input-register::placeholder {
+  color: rgb(99, 95, 95);
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+.input-register:focus::placeholder {
+  position: absolute;
+  font-size: 12px;
+  color: rgb(29, 155, 240);
+  transform: translateY(-2px);
+}
+
+.gender {
+  margin: 12px 0;
+}
+.gender .gender-title {
+  font-size: 17px;
+}
+.gender .category {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+input[name="gender"] {
+  display: none;
+}
+.gender-detail {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 17px;
+  display: block;
+}
+.gender-detail .gender-otp {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 16px 4px 10px;
+  border-radius: 24px;
+  transition: 0.25s ease;
+}
+.gender-detail .gender-otp:hover,
+input[name="gender"]:checked + .gender-otp {
+  background-color: #d6d6e5;
+}
+.gender-detail .gender-otp::before {
+  content: "";
+  background-color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 2px #00005c;
+}
+
+input[name="gender"]:checked + .gender-otp::before {
+  box-shadow: inset 0 0 0 6px #00005c;
+}
+
+.button-register {
+  background: #dc3545;
+  /* background: rgb(255, 56, 92); */
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #dc3545;
+  outline: none;
+  border-radius: 60px;
+  width: 60%;
+}
+
+.button-register:active {
+  background: #d3737c;
+  transform: scale(0.995);
+}
+
+.form-register .option {
+  color: #5a5a5a;
+  margin: 15px 0;
+  font-weight: bold;
+  position: relative;
+}
+
+.form-register .option:before {
+  position: absolute;
+  content: "";
+  width: 37%;
+  height: 2px;
+  background: #b6b6b6;
+  left: 0;
+  top: 50%;
+  transform: scaleY(-50%);
+  border-radius: 50px;
+}
+.form-register .option:after {
+  position: absolute;
+  content: "";
+  width: 37%;
+  height: 2px;
+  background: #b6b6b6;
+  right: 0;
+  top: 50%;
+  transform: scaleY(-50%);
+  border-radius: 50px;
+}
+
+.alreadyacc {
+  position: relative;
+  border: 1px solid #b6b6b6;
+  border-radius: 2px;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 25px 0;
+  padding: 10px 0;
+}
+.alreadyacc .haveacc {
+  margin: 0;
+  font-weight: 500;
+}
+
+.loginlink {
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  color: rgb(0, 85, 170);
+}
+
+.loginlink:hover {
+  color: #dc3545;
+}
+
+/* ERRORS */
+.border-warn {
+  border: 2px solid red !important;
+}
+.bg-warn {
+  background: rgb(228 148 148 / 51%);
+}
+input[id="birthday2"]::before {
+  content: attr(placeholder);
+  color: rgb(99, 95, 95);
+  /* padding-right: 15px; */
+}
+
+/* ::-webkit-datetime-edit-month-field,
+::-webkit-datetime-edit-day-field,
+::-webkit-datetime-edit-year-field { 
+} */
+
+input::-webkit-calendar-picker-indicator {
+  padding-right: 12px;
+}
+/* // */
+
+/* reponsive  */
+@media screen and (max-width: 992px) {
+  .form-register {
+    width: 88%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form-register {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-register {
+    width: 65%;
+  }
+
+  .button-register {
+    width: 100%;
+  }
+  form .user-details .input-box {
+    width: 100%;
+  }
+  .alreadyacc {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .form-register {
+    width: 82%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .form-register {
+    background-image: none;
+  }
+  .register-col-left {
+    display: none;
+  }
+  .register-col-right {
+    background-image: url("../../assets/signup-image.jpeg");
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .title-register {
+    display: inline-block;
+    color: #000;
+    background: rgba(61, 98, 230, 0.84);
+    /* background: rgb(147 160 206 / 60%); */
+    /* color: #fff; */
+  }
+
+  .gender .gender-title {
+    background: rgb(147 160 206 / 60%);
+    font-weight: bold;
+    border-radius: 15px;
+  }
+
+  .gender-detail .gender-otp,
+  .loginwith,
+  .form-register .option {
+    color: #fff;
+  }
+  input[name="gender"]:checked + .gender-otp,
+  .gender-detail .gender-otp:hover {
+    color: #000;
+  }
+
+  .text-danger {
+    background: aliceblue;
+    /* width: 74%; */
+    margin: 2% auto;
+    border-radius: 3px;
+  }
+  .input-register::placeholder {
+    color: #000;
+  }
+  .bg-warn {
+    background: rgba(190, 57, 57, 0.884);
+  }
+  .alreadyacc .haveacc {
+    color: #fff;
+  }
+}
+
+/* //// */
+/* .input-box[data-error] .input-register {
+  border-color: #c92432;
+  color: #c92432;
+  background: #fffafa;
+}
+
+.input-box[data-error]::after {
+  content: attr(data-error);
+  font-size: 0.85rem;
+  color: #c92432;
+  display: block;
+} */
+
+/* // */
